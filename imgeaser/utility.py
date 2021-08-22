@@ -5,6 +5,7 @@ utility
 Utility functions for the imgeaser module.
 """
 from functools import wraps
+from inspect import getmembers, isfunction
 from typing import Callable
 
 import numpy as np
@@ -35,7 +36,17 @@ def will_scale(fn: Callable) -> Callable:
     return wrapper
 
 
-# Debugging utilities.
+# Convenience utilities.
+def get_prefixed_functions(prefix: str, obj: object) -> dict:
+    """Return the functions within the given object that start with
+    the prefix.
+    """
+    names = getmembers(obj, isfunction)
+    p_len = len(prefix)
+    fns = {name[p_len:]: fn for name, fn in names if name.startswith(prefix)}
+    return fns
+
+
 def print_array(a: np.ndarray, depth: int = 0, color: bool = True) -> None:
     """Write the values of the given array to stdout."""
     if len(a.shape) > 1:

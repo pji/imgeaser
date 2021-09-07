@@ -200,9 +200,8 @@ def ease_mid_bump_sin(a: np.ndarray) -> np.ndarray:
 
 if __name__ == '__main__':
     from imgeaser.utility import print_array, A, E
-    
+
     ease = ease_mid_bump_sin
     a = E.copy()
     eased = ease(a)
     print_array(eased, depth=2)
-    

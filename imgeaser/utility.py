@@ -23,15 +23,15 @@ def will_scale(fn: Callable) -> Callable:
             a -= scale_offset
             scale = np.max(a)
             a /= scale
-        
+
         # Perform the ease.
         a = fn(a)
-        
+
         # If the data was scaled, undo the scaling.
         if scale or scale_offset:
             a *= scale
             a += scale_offset
-        
+
         return a
     return wrapper
 

@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/imgeaser/__init__.py
+src/imgeaser/imgeaser.py
+src/imgeaser/utility.py
+src/imgeaser.egg-info/PKG-INFO
+src/imgeaser.egg-info/SOURCES.txt
+src/imgeaser.egg-info/dependency_links.txt
+src/imgeaser.egg-info/requires.txt
+src/imgeaser.egg-info/top_level.txt
+tests/test_imgeaser.py
+tests/test_utility.py

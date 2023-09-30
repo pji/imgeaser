@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.rstcheck]
+report_level = "WARNING"
+ignore_directives = ["autoclass", "autofunction"]
+
+[tool.pytest.ini_options]
+# addopts = ["--import-mode=importlib",]
+markers = []
+
+[project]
+name = "imgeaser"
+version = "0.0.3"
+authors = [
+  { name="Paul J. Iutzi", email="pji@mac.com" },
+]
+description = "A package for performing easing functions on image data."
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'numpy',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pji/imgeaser"
+"Bug Tracker" = "https://github.com/pji/imgeaser/issues"

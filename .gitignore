@@ -1,6 +1,11 @@
 # Ignore compiled files.
 *.pyc
 *__pycache__
+docs/build/*
 
 # Ignore virtual environment.
 .venv
+
+# Ignore OS and IDE files.
+.DS_Store
+*BBEdit*

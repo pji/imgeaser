@@ -6,7 +6,6 @@ import numpy as np
 import pytest as pt
 
 from imgeaser import imgeaser as ie
-from tests.common import A, E
 
 
 # Fixtures.

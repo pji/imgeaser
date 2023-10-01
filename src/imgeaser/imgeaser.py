@@ -751,12 +751,3 @@ def ease_mid_bump_sin(a: ImgAry) -> ImgAry:
     a[m] = (.25 - a[m]) * 4
     a[~m] = 0
     return ease_in_out_sin(a)
-
-
-if __name__ == '__main__':
-    from imgeaser.utility import print_array, A, E
-
-    ease = ease_mid_bump_sin
-    a = E.copy()
-    eased = ease(a)
-    print_array(eased, depth=2)

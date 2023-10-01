@@ -49,10 +49,9 @@ How do I run the tests?
 ***********************
 The `precommit.py` script in the root of the repository will run the
 unit tests and a few other tests beside. Otherwise, the unit tests
-are written with the standard unittest module, so you can run the
-tests with::
+are written with the `pytest` module, so you can run the tests with::
 
-    python -m unittest discover tests
+    python -m pytest
 
 
 How do I contribute?

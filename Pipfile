@@ -20,6 +20,8 @@ tox = "*"
 isort = "*"
 tomli = "*"
 rstcheck = {extras = ["sphinx", "toml"], version = "*"}
+build = "*"
+twine = "*"
 imgeaser = {file = ".", editable = true}
 
 [requires]

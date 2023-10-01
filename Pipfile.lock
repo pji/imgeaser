@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5b86cf02f89ed9f8b80b90408534580d42702e642f108efdb6963b022165f6cc"
+            "sha256": "8d8fe9d7e15d3dfb6a41cac40e06e182b9f81868529626de4a274aea44d03b44"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1013,11 +1013,14 @@
             "version": "==13.6.0"
         },
         "rstcheck": {
+            "extras": [
+                "sphinx",
+                "toml"
+            ],
             "hashes": [
                 "sha256:4f47d1e136e8dc7e6fd54d9679dbc1ed7c4d87b12e17d00003fccf4734e9ffdf",
                 "sha256:63262c8453489a6e3873113e16c1d234c86ca90a829e685263fd6c7aec0073fa"
             ],
-            "index": "pypi",
             "markers": "python_version >= '3.8'",
             "version": "==6.2.0"
         },
@@ -1124,6 +1127,15 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==1.1.9"
+        },
+        "tomli": {
+            "hashes": [
+                "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
+                "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==2.0.1"
         },
         "tox": {
             "hashes": [

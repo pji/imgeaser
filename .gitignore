@@ -1,7 +1,6 @@
 # Ignore compiled files.
 *.pyc
 *__pycache__
-docs/build/*
 *.egg-info
 
 # Ignore virtual environment.

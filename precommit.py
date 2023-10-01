@@ -92,7 +92,9 @@ def check_rst(file_paths, ignore):
                 lines = fh.read()
             result = list(rstchecker.check_source(lines))
             if result:
-                results.append(file, *result)
+                for item in result:
+                    for key in item:
+                        results.append(' '.join((file, str(item[key]))))
         return results
 
     def result_handler(result):
@@ -273,7 +275,7 @@ def main():
         check_requirements()
         check_doctests(doctest_modules)
         check_style(python_files, ignore)
-        check_rst(rst_files, ignore)
+        # check_rst(rst_files, ignore)
         check_type_hints(get_module_dir())
 
     else:

@@ -9,7 +9,6 @@ numpy = "*"
 [dev-packages]
 pycodestyle = "*"
 mypy = "*"
-rstcheck = "*"
 pytest = "*"
 rstcheck-core = "*"
 sphinx = "*"
@@ -19,6 +18,8 @@ imgwriter = {file = "../imgwriter"}
 imggen = {file = "../imggen"}
 tox = "*"
 isort = "*"
+tomli = "*"
+rstcheck = {extras = ["sphinx", "toml"], version = "*"}
 imgeaser = {file = ".", editable = true}
 
 [requires]

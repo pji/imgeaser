@@ -67,7 +67,7 @@ figure out how to handle it.
 
 
 Updates
-*****
+*******
 The following changes were made in version 0.0.3:
 
 *   Migrate tests to `pytest`.

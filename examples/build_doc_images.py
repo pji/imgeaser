@@ -27,7 +27,7 @@ def make_images(path: Path, size: Sequence[int]) -> None:
 def make_curve(path: Path, ease: ie.Ease) -> None:
     """Create the curve for an ease."""
     # Create the curve data.
-    base = np.arange(65, dtype=float) / 64
+    base = np.arange(129, dtype=float) / 128
     eased = ease(base.copy())
     
     # Plot the curve.

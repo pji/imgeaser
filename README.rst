@@ -66,9 +66,9 @@ added, go ahead and open an issue. If anyone ever does that, I'll
 figure out how to handle it.
 
 
-To-Do
+Updates
 *****
-The following changes are planned for version 0.0.3:
+The following changes were made in version 0.0.3:
 
 *   Migrate tests to `pytest`.
 *   Improve typing.

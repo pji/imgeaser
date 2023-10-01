@@ -4,8 +4,8 @@ __init__
 
 Initialization for the imgeaser module.
 """
-from imgeaser.imgeaser import *
 from imgeaser import imgeaser
+from imgeaser.imgeaser import *
 from imgeaser.utility import get_prefixed_functions
 
 
